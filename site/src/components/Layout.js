@@ -14,8 +14,13 @@ const StyledLayout = styled.article`
   background-color: #9794f1;
   box-shadow: 5px 15px 30px black;
   border-radius: 4px;
+  transition: width 0.3s ease, height 3s ease;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1152px) {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  @media screen and (min-width: 1152px) {
     width: 50%;
     margin: 1rem auto;
   }
@@ -25,12 +30,12 @@ const StyledBranding = styled.p`
   color: white;
   position: relative;
   top: 2rem;
-  margin-left: calc(100% - 180px - 1rem);
+  margin-left: calc(100% - 300px - 1rem);
   font-size: 0.8rem;
   background-color: red;
   display: block;
-  max-width: 180px;
-  padding: 0 1rem 0.2rem 1rem;
+  max-width: 300px;
+  padding: 0.2rem 1.7rem 0.4rem;
 `
 
 const Layout = () => {

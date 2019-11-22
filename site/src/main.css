@@ -10,11 +10,11 @@ body {
            )
     repeat;
   font-family: "Indie Flower", serif;
-  font-size: 16px;
   text-shadow: 0 2px 2px black;
 }
 
 * {
+  font-size: 24px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

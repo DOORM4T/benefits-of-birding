@@ -20,7 +20,7 @@ const StyledSubtitle = styled.h2`
 const StyledTitle = styled.h1`
   font-size: 1.5rem;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     max-width: 60%;
   }
 `
@@ -30,6 +30,13 @@ const Logo = styled.img`
   right: 0;
   bottom: 0;
   height: 60%;
+
+  @media (max-width: 480px) {
+    height: 40%;
+  }
+  @media (max-width: 350px) {
+    height: 20%;
+  }
 `
 
 const Header = () => {
