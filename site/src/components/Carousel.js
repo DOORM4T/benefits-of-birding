@@ -13,8 +13,7 @@ import Image4 from "../images/selective-focus-photography-of-black-bird.png"
 import styled from "styled-components"
 const StyledSlider = styled(Slider)`
   background-color: black;
-  padding: 1rem 0 0.6rem 0;
-  max-height: 160px;
+  padding: 1rem 0 0.5rem 0;
 
   @media print {
     display: none !important;
