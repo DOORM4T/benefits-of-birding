@@ -1,14 +1,15 @@
-import React from "react"
-import Header from "./Header"
-import Section from "./Section"
-import Carousel from "./Carousel"
-import Visualization from "./Visualization"
+import React from "react";
+import Header from "./Header";
+import Section from "./Section";
+import Carousel from "./Carousel";
+import Citation from "./Citation";
+import Visualization from "./Visualization";
 
 // Global Styles
-import "../main.css"
+import "../main.css";
 
 // Styled Components
-import styled from "styled-components"
+import styled from "styled-components";
 const StyledLayout = styled.article`
   width: 100%;
   background-color: #9794f1;
@@ -24,24 +25,21 @@ const StyledLayout = styled.article`
     width: 50%;
     margin: 1rem auto;
   }
-`
+`;
 
 const StyledBranding = styled.p`
   color: white;
   position: relative;
   top: 2rem;
-  margin-left: auto;
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-color: red;
   display: block;
   width: 300px;
   padding: 0.2rem 1.7rem 0.4rem;
   border-radius: 4px 0 0 0;
-
-  @media (max-width: 1152px) {
-    margin: 0 auto;
-  }
-`
+  margin: 0 auto;
+  text-align: center;
+`;
 
 const Layout = () => {
   return (
@@ -65,6 +63,9 @@ const Layout = () => {
           {/* Birds Carousel */}
           <Carousel />
 
+          {/* Citation */}
+          <Citation />
+
           {/* D3 Visualization */}
           <Visualization />
 
@@ -84,16 +85,19 @@ const Layout = () => {
                   quis aliqua. Sint ullamco elit sunt fugiat adipisicing culpa
                   dolor elit culpa consectetur do nulla ipsum.
                 </p>
-              )
+              );
             }}
           />
         </main>
       </StyledLayout>
       <StyledBranding>
-        A project by Matt Seto <a href="https://github.com/DOORM4T">🚪</a>
+        A project by Matt Seto{" "}
+        <span role="img" aria-label="Door Emoji">
+          <a href="https://github.com/DOORM4T">🚪</a>
+        </span>
       </StyledBranding>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
