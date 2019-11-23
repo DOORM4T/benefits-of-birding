@@ -39,6 +39,10 @@ const Logo = styled.img`
     transform: rotate(-15deg) translateY(40px);
   }
 
+  @media (min-width: 481px) {
+    height: 100%;
+  }
+
   @media (max-width: 480px) {
     height: 40%;
   }

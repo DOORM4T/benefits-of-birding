@@ -13,7 +13,7 @@ import styled from "styled-components";
 const StyledLayout = styled.article`
   width: 100%;
   background-color: #9794f1;
-  box-shadow: 5px 15px 30px black;
+  box-shadow: 0 0 100vw 100vw rgba(0, 0, 0, 0.4), 5px 15px 10px black;
   border-radius: 4px;
   transition: width 0.3s ease, height 3s ease;
 

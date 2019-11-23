@@ -27,14 +27,13 @@ const StyledSource = styled.p`
   font-size: 0.9rem;
 `;
 
-const BoldText = styled.strong`
+const BoldAnchor = styled.a`
   font-weight: 800;
-  background-color: #8f9c77;
   transition: transform 0.3s ease;
   padding: 0.2rem 1rem;
   border-radius: 4px;
   display: inline-block;
-  font-family: Poleno, sans-serif;
+  color: gold;
 
   &:hover {
     transform: scale(1.05);
@@ -54,8 +53,9 @@ const Citation = () => {
           <p>
             <StyledCitation>
               "Of five neighborhood nature characteristics tested, vegetation
-              cover and afternoon <BoldText>bird abundances</BoldText> were
-              positively associated with a lower prevalence of depression,
+              cover and afternoon{" "}
+              <BoldAnchor href="#Visualization">bird abundances</BoldAnchor>{" "}
+              were positively associated with a lower prevalence of depression,
               anxiety, and stress."
             </StyledCitation>
           </p>
