@@ -56,20 +56,16 @@ const Content = () => {
 
       {/* Works Cited Section */}
       <Section
-        title="Works Cited"
+        title="Source"
         render={() => {
           return (
-            <p>
-              Incididunt non enim fugiat nisi. Mollit sunt excepteur laborum
-              quis esse magna incididunt irure sit ut veniam. Nulla quis non
-              voluptate in voluptate non veniam aliqua. Lorem sunt ex enim aute
-              anim qui et aute nostrud sit excepteur. Consectetur exercitation
-              reprehenderit qui Lorem ea officia excepteur occaecat do magna
-              officia consectetur cupidatat aliquip. Ullamco consequat aute
-              incididunt eiusmod in culpa minim culpa quis aliqua. Sint ullamco
-              elit sunt fugiat adipisicing culpa dolor elit culpa consectetur do
-              nulla ipsum.
-            </p>
+            <a
+              style={{ textShadow: "none", color: "blue" }}
+              href="https://academic.oup.com/bioscience/article/67/2/147/2900179"
+            >
+              Doses of Neighborhood Nature: The Benefits for Mental Health of
+              Living with Nature
+            </a>
           );
         }}
       />

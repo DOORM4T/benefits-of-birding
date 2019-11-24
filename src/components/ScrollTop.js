@@ -24,7 +24,7 @@ const ScrollTop = () => {
     window.scrollTo({ top: 0 }, { behavior: "smooth" });
   };
 
-  return <StyledButton onClick={handleClick}>/\</StyledButton>;
+  return <StyledButton onClick={handleClick}>&uarr;</StyledButton>;
 };
 
 export default ScrollTop;
