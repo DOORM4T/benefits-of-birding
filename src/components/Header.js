@@ -34,6 +34,7 @@ const Logo = styled.img`
   height: 60%;
   transition: transform 1s ease;
   transform-origin: bottom;
+  cursor: pointer;
 
   &:hover {
     transform: rotate(-15deg) translateY(40px);

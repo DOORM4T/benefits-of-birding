@@ -62,8 +62,7 @@ const Citation = () => {
           <StyledSource>
             - From the Overview of{" "}
             <StyledAnchor href="https://academic.oup.com/bioscience/article/67/2/147/2900179">
-              "Doses of Neighborhood Nature: The Benefits for Mental Health of
-              Living with Nature"
+              "Doses of Neighborhood Nature"
             </StyledAnchor>
           </StyledSource>
         </CitationArea>

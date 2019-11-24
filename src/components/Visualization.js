@@ -6,6 +6,7 @@ import "chart.js/dist/Chart.min.css";
 // Styled Components
 import styled from "styled-components";
 const VisualizationDiv = styled.div`
+  position: relative;
   margin-top: 1rem;
   background-color: #5b55f8;
   box-shadow: 0 0 10px black;
@@ -15,7 +16,9 @@ const VisualizationDiv = styled.div`
 const StyledCanvas = styled.canvas`
   max-height: 100%;
   margin: 0 auto;
+  margin-top: 1rem;
   background-color: white;
+  border-radius: 4px;
 `;
 
 const StyledTitle = styled.h2`
@@ -23,6 +26,15 @@ const StyledTitle = styled.h2`
   font-size: 1.4rem;
   text-align: center;
   margin-top: 1rem;
+`;
+
+const StyledSource = styled.a`
+  text-align: left
+  position: absolute;
+  top:0.4rem;
+  left:0.4rem;
+  font-size: 0.5rem;
+  color: gold;
 `;
 
 // D3 Visualization Component
@@ -67,7 +79,10 @@ const Visualization = () => {
           <VisualizationDiv>
             <StyledCanvas ref={canvasRef}></StyledCanvas>
             <StyledTitle>
-              Mental Health and the Population of Afternoon Birds
+              Mental Health & the Avg. Pop. of Afternoon Birds
+              <StyledSource href="https://academic.oup.com/bioscience/article/67/2/147/2900179">
+                Data from "Doses of Neighborhood Nature"
+              </StyledSource>
             </StyledTitle>
           </VisualizationDiv>
         );
