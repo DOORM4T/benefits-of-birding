@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import Header from "./Header";
 import Content from "./Content";
 import Branding from "./Branding";
@@ -27,8 +27,13 @@ const StyledLayout = styled.article`
 `;
 
 const Layout = () => {
+  const hiddenRef = useRef(null);
+  useLayoutEffect(() => {
+    hiddenRef.current.classList.remove("hidden");
+  }, []);
+
   return (
-    <article>
+    <article className="layout hidden" ref={hiddenRef}>
       <StyledLayout>
         <Header />
         <Content />
