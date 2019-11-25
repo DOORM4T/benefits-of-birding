@@ -3,11 +3,14 @@
 
 /* Indie Flower */
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: url(
         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVElEQVQoU2NkbW83Zvj37wwDDDAxmYCZaGKMrK2t/1EUwRSANCApRihEkwBrRhKDKERWhG41VI4RxY0wRTC3IDmDBIVEWw3zNVGeQQ5DnMFDZIADAHsMU3dd7iyRAAAAAElFTkSuQmCC
-           )
+        )
     repeat;
   font-family: "Indie Flower", serif;
   text-shadow: 0 2px 2px black;
@@ -24,5 +27,4 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
