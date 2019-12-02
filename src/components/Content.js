@@ -5,9 +5,25 @@ import Citation from "./Citation";
 import Visualization from "./Visualization";
 import ColorText from "./ColorText";
 
+import styled from "styled-components";
+
+const AnimatedMain = styled.main`
+  animation: fadeIn 0.4s ease-in 0.8s forwards;
+  opacity: 0;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
+
 const Content = () => {
   return (
-    <main>
+    <AnimatedMain>
       {/* Info Sections */}
       <Section
         title="Birding"
@@ -56,20 +72,28 @@ const Content = () => {
 
       {/* Works Cited Section */}
       <Section
-        title="Source"
+        title="Sources"
         render={() => {
           return (
-            <a
-              style={{ textShadow: "none", color: "blue" }}
-              href="https://academic.oup.com/bioscience/article/67/2/147/2900179"
-            >
-              Doses of Neighborhood Nature: The Benefits for Mental Health of
-              Living with Nature
-            </a>
+            <ul style={{ listStyle: "none", textShadow: "none" }}>
+              <li>
+                Article:
+                <br />
+                <a href="https://academic.oup.com/bioscience/article/67/2/147/2900179">
+                  Doses of Neighborhood Nature: The Benefits for Mental Health
+                  of Living with Nature
+                </a>
+              </li>
+              <br />
+              <li>
+                Royalty Free Images:{" "}
+                <a href="https://www.pexels.com/">Pexels</a>
+              </li>
+            </ul>
           );
         }}
       />
-    </main>
+    </AnimatedMain>
   );
 };
 
