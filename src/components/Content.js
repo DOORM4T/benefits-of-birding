@@ -30,8 +30,9 @@ const Content = () => {
         render={() => (
           <p>
             Is short for bird watching. Studies show that the number of birds we
-            see in a day correlates with lower stress levels. And you don't even
-            need to be a bird watcher!
+            see in a day correlates with improved mental health. You don't even
+            need to be a professional bird watcher to reap the benefits of
+            birding!
           </p>
         )}
       />
